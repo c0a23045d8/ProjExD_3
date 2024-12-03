@@ -152,7 +152,7 @@ class Score:
         self.rct.bottomleft = (100, HEIGHT - 50) # 文字の配置場所を設定
     
     def update(self, screen: pg.Surface):
-        self.img = self.fonto.render(f'Score:{self.score} ', 0, (0,0,255))
+        self.img = self.fonto.render(f'Score:{self.score} ', 0, (0,0,255)) # スコアの表示を設定
         screen.blit(self.img, self.rct)
                                      
 
